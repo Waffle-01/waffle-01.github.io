@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "朝哥牛逼"
+title: "原神 启动！"
 categories: misc
 ---
 
-## 朝哥yyds
+## 
 ```
 
 ```
