@@ -1,3 +1,3 @@
 # Blog
 
-blog.waffle.icu
+https://blog.waffle.icu
