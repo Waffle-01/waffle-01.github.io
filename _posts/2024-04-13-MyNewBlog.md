@@ -1,7 +1,10 @@
 ---
 layout: post
-title: "我的第一个博客"
+title: "朝哥牛逼"
 categories: misc
 ---
 
-## 这是我的第一个blog
+## 朝哥yyds
+```
+
+```
