@@ -1,3 +1,5 @@
+theme: redefine
+
 deploy:
   type: git
   repo: https://github.com/Waffle-01/waffle-01.github.io
