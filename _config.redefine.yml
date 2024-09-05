@@ -24,7 +24,7 @@ info:
 # Docs: https://redefine-docs.ohevan.com/basic/defaults
 defaults:
   # Favicon
-  favicon: /images/redefine-favicon.svg
+  favicon: /images/favicon.ico
   # Site logo
   logo: 
   # Site avatar
@@ -221,7 +221,7 @@ navbar:
   # Navbar search (local search). Requires hexo-generator-searchdb (npm i hexo-generator-searchdb). See https://github.com/theme-next/hexo-generator-searchdb
   search:
     # Whether to enable
-    enable: false
+    enable: true
     # Preload search data when the page loads
     preload: true
 # NAVIGATION BAR <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
@@ -417,6 +417,7 @@ inject:
 
 # PLUGINS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
 # Docs: https://redefine-docs.ohevan.com/plugins
+# 音乐播放器设置
 plugins:
   # RSS feed. Requires hexo-generator-feed (npm i hexo-generator-feed). See https://github.com/hexojs/hexo-generator-feed
   feed:
@@ -424,7 +425,7 @@ plugins:
   # Aplayer. See https://github.com/DIYgod/APlayer
   aplayer:
     enable: false # Whether to enable
-    type: fixed # fixed, mini
+    type: mini # fixed, mini
     audios:
       - name: # audio name
         artist: # audio artist
