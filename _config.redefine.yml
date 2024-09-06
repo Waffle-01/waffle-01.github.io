@@ -198,6 +198,10 @@ navbar:
     Home: 
       path: / 
       icon: fa-regular fa-house # can be empty
+
+    archives:
+      path: /archives/
+      icon: 
     # Archives: 
     #   path: /archives 
     #   icon: fa-regular fa-archive # can be empty
