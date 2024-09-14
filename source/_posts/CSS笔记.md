@@ -1,6 +1,7 @@
 ---
 title: CSS笔记
 date: 2024-09-14
+description: CSS笔记，会时常更新
 ---
 
 ### 内联样式
