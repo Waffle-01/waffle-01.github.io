@@ -1,7 +1,7 @@
 ---
 title: HTML笔记
 date: 2024-09-14
-excerpt:: "HTML笔记，会时长更新"
+excerpt: "HTML笔记，会时长更新"
 ---
 
 ### HTML5 基本骨架
