@@ -255,7 +255,7 @@ home:
   # Article date format
   article_date_format: auto # auto, relative, YYYY-MM-DD, YYYY-MM-DD HH:mm:ss etc.
   # Article excerpt length
-  excerpt_length: 200 # Max length of article excerpt
+  excerpt_length: 0 # Max length of article excerpt
   # Article categories visibility
   categories:
     enable: true  # Whether to enable
