@@ -210,7 +210,7 @@ excerpt: "CSS笔记，会时常更新"
 ```
 
 ### 盒子模型
-<img src="../images/box.png" width=400px  object-fit: contain>
+<img src="https://github.com/Waffle-01/waffle-01.github.io/blob/main/source/images/box.png?raw=true" width=400px  object-fit: contain>
 
 ### 弹性盒子模型 (css3新特性)
 `display: flex;`
@@ -222,7 +222,7 @@ excerpt: "CSS笔记，会时常更新"
 >默认弹性盒子内容横向摆放
 
 ### 浮动
-<img src="../images/float.png" width = 600px object-fit: contain/>
+<img src="https://github.com/Waffle-01/waffle-01.github.io/blob/main/source/images/float.png?raw=true" width = 600px object-fit: contain/>
 >只有左右浮动
 
 **浮动的副作用**
@@ -275,7 +275,7 @@ overflow清除浮动 父级容器添加`overflow: hidden;clear: both;`
 
 ### css3新特性
 **圆角**
-<img src="../images/border-radius.png" width = 600px object-fit: contain/>
+<img src="https://github.com/Waffle-01/waffle-01.github.io/blob/main/source/images/border-radius.png?raw=true" width = 600px object-fit: contain/>
 
 该属性是一个 简写属性，将这四个属性 `border-top-left-radius` `border-top-right-radius` `border-bottom-right-radius` `border-bottom-left-radius` 简写为一个属性
 
