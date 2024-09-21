@@ -39,6 +39,7 @@ excerpt: "CSS笔记，会时常更新"
 </style>
 ```
 >优先级低
+
 **元素选择器**
 ```css
 <style>
