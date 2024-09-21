@@ -30,14 +30,14 @@ Referer字段实际上告诉了服务器，用户在访问当前资源之前的�
 
 #### referrer策略
 
-- no-referrer: 不发送 Referrer 信息。
-- no-referrer-when-downgrade: 仅当发生协议降级时不发送 Referrer 信息。（如 HTTPS 页面引入 HTTP 资源，从 HTTPS 页面跳到 HTTP ）
-- same-origin: 链接到同源网址（协议+域名+端口 都相同）时发送，否则不发送。
-- origin: 一律只发送源信息（协议+域名+端口），不管是否跨域。
-- strict-origin: 如果从 HTTPS 网址链接到 HTTP 网址，不发送Referer字段，其他情况只发送源信息。
-- origin-when-cross-origin: 同源时，发送完整的Referer字段，跨域时发送源信息。
-- strict-origin-when-cross-origin: 同源时，发送完整的Referer字段；跨域时，如果 HTTPS 网址链接到 HTTP 网址，不发送Referer字段，否则发送源信息。
-- unsafe-url: Referer字段包含源信息、路径和查询字符串，不包含锚点、用户名和密码。
+- `no-referrer`: 不发送 Referrer 信息。
+- `no-referrer-when-downgrade`: 仅当发生协议降级时不发送 Referrer 信息。（如 HTTPS 页面引入 HTTP 资源，从 HTTPS 页面跳到 HTTP ）
+- `same-origin`: 链接到同源网址（协议+域名+端口 都相同）时发送，否则不发送。
+- `origin`: 一律只发送源信息（协议+域名+端口），不管是否跨域。
+- `strict-origin`: 如果从 HTTPS 网址链接到 HTTP 网址，不发送Referer字段，其他情况只发送源信息。
+- `origin-when-cross-origin`: 同源时，发送完整的Referer字段，跨域时发送源信息。
+- `strict-origin-when-cross-origin`: 同源时，发送完整的Referer字段；跨域时，如果 HTTPS 网址链接到 HTTP 网址，不发送Referer字段，否则发送源信息。
+- `unsafe-url`: Referer字段包含源信息、路径和查询字符串，不包含锚点、用户名和密码。
 
 #### referrer用法
 
