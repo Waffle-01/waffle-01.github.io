@@ -423,8 +423,10 @@ box-shadow: unset;
 `display: block;` 将元素渲染为块级元素
 `display: inline` 将元素渲染为内联元素
 `display: none` 元素不会被显示在页面上，也不会占据空间
+[`outline`]<https://developer.mozilla.org/zh-CN/docs/Web/CSS/outline>
 
 **注**
 >`<style>`标签一般在`<head>`内
 `<p>`标签等在`<body>`内
 chrome浏览器最小字体大小 12px
+
