@@ -1,5 +1,5 @@
 ---
-title: Promise async/await
+title: JavaScript 笔记
 date: 2024-10-03
 excerpt: "javascript 笔记，会时常更新"
 ---
