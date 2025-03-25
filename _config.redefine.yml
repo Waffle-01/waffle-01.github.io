@@ -203,9 +203,10 @@ navbar:
       path: /archives
       icon: fa-solid fa-box-archive
     
-    Notes:
-      path: /notes
-      icon: fa-solid fa-note
+    # Notes:
+    #   path: /notes
+    #   icon: fa-solid fa-note
+    
     # Status: 
     #   path: https://status.ohevan.com/
     #   icon: fa-regular fa-chart-bar
@@ -266,7 +267,7 @@ home:
   # tags:
   #   enable: false  # Whether to enable
   #   limit: 3  # Max number of tags to display
-  
+
 # HOME PAGE ARTICLE SETTINGS <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
 
