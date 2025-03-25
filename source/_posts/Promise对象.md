@@ -1,7 +1,7 @@
 ---
 title: Promise async/await
 date: 2024-10-02
-excerpt: "解释回调地狱,异步任务,promise以及async/await"
+excerpt: "解释回调地狱，异步任务，promise以及async/await"
 ---
 
 
