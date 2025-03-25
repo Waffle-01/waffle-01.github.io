@@ -227,16 +227,14 @@ excerpt: "CSS基础内容"
 ### 浮动
 <img src="https://github.com/Waffle-01/waffle-01.github.io/blob/main/source/_posts/images/CSS_img/float.png?raw=true" width = 600px object-fit: contain/>
 
->只有左右浮动
+**浮动的特性**
+
+1. 只有左右浮动，`float` 只能指定 `left` 或 `right`，不会影响垂直方向.
+2. 脱离文档流，使用 `float` 后，元素仍然可见，但它会脱离标准文档流（不再影响其他非浮动元素的布局）。
 
 **浮动的副作用**
-1.父元素的高度无法被撑开
-2.浮动元素可能会重叠
-
->父元素设置高度
-受影响元素添加clear属性 `clear: both;`
-overflow清除浮动 父级容器添加`overflow: hidden;clear: both;`
-伪对象方式 `.container::after{content: "";display: block;clear: both;}`
+1. 父元素的高度无法被撑开
+2. 浮动元素可能会重叠
 
 ### 定位
 **fixed**
@@ -281,11 +279,18 @@ overflow清除浮动 父级容器添加`overflow: hidden;clear: both;`
 **圆角**
 <img src="https://github.com/Waffle-01/waffle-01.github.io/blob/main/source/_posts/images/CSS_img/border-radius.png?raw=true" width = 600px object-fit: contain/>
 
-该属性是一个 简写属性，将这四个属性 `border-top-left-radius` `border-top-right-radius` `border-bottom-right-radius` `border-bottom-left-radius` 简写为一个属性
+- `border-top-left-radius`：左上角
+- `border-top-right-radius`：右上角 
+- `border-bottom-left-radius`：左下角
+- `border-bottom-right-radius`：右下角
 
->四个值：左上 右上 右下 左下
-三个值：左上 右上+左下 右下
-两个值：左上+右下 左下+右上
+| 语法 | 解释 |
+|------|------|
+| `border-radius: 10px;` | **所有角** 都为 `10px` |
+| `border-radius: 10px 20px;` | 左上&右下 = `10px`，右上&左下 = `20px` |
+| `border-radius: 10px 20px 30px;` | 左上 = `10px`，右上&左下 = `20px`，右下 = `30px` |
+| `border-radius: 10px 20px 30px 40px;` | 左上 = `10px`，右上 = `20px`，右下 = `30px`，左下 = `40px` |
+
 
 **阴影**
 ```css
@@ -302,9 +307,7 @@ box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 box-shadow: inset 5em 1em gold;
 
 /* 任意数量的阴影，以逗号分隔 */
-box-shadow:
-  3px 3px red,
-  -1em 0 0.4em olive;
+box-shadow: 3px 3px red, -1em 0 0.4em olive;
 
 /* 全局关键字 */
 box-shadow: inherit;
@@ -357,15 +360,16 @@ box-shadow: unset;
 
 `animation: name duration timing-function delay iteration-count direction fill-mode;`
 
-| 属性      | Description |
-| ----------- | ----------- |
-| `name`      | 名称       |
-| `duration`   | 持续时间        |
-| `timing-function` | 时间函数; `linear`（匀速）`ease`（慢开始，然后变快，再慢结束）、`ease-in`（慢开始）、`ease-out`（慢结束）`cubic-bezier(0.42, 0, 0.58, 1)`（贝塞尔曲线自定义的缓动效果） |
-| `delay` | 延迟时间 |
+| 属性              | 描述 |
+|------------------|------|
+| `name`          | 名称 |
+| `duration`      | 持续时间 |
+| `timing-function` | 时间函数：  <br> `linear`（匀速） <br> `ease`（慢开始 → 变快 → 慢结束） <br> `ease-in`（慢开始） <br> `ease-out`（慢结束） <br> `cubic-bezier(0.42, 0, 0.58, 1)`（自定义贝塞尔曲线） |
+| `delay`         | 延迟时间 |
 | `iteration-count` | 迭代次数 |
-| `direction` | 动画方向; normal（正常方向）、reverse（反向播放）、alternate（动画在每次迭代时反向播放）、alternate-reverse（动画在第一次迭代时反向播放，然后每次迭代时反向）  |
-| `fill-mode` | 填充模式; `none`（默认值，动画在开始前和结束后不会应用任何样式到目标）`forwards`（动画在结束后保持最后一个关键帧的样式）`backwards`（动画会在等待开始时应用第一个关键帧的样式）、`both`（`forwards` 和 `backwards` 的组合） |
+| `direction`     | 动画方向： <br> `normal`（正常方向） <br> `reverse`（反向播放） <br> `alternate`（每次迭代反向播放） <br> `alternate-reverse`（初次反向播放，后续每次迭代反向） |
+| `fill-mode`     | 填充模式： <br> `none`（默认，动画前后不应用样式） <br> `forwards`（动画结束后保持最后一帧） <br> `backwards`（动画等待时应用第一帧） <br> `both`（`forwards` + `backwards` 组合） |
+
 
 ### 媒体查询
 **设置\<meta>标签**
@@ -409,16 +413,16 @@ box-shadow: unset;
 ### 雪碧图
 
 **优点**
-1.减少图片的字节数。
-2.减少了网页的HTTP请求，从而大大提高了页面的性能。
-3.解决了网页设计师在图片命名上的困扰，只需要对一张集合的图片的命名就可以了 不需要对每一个小元素进行命名，从而提高了网页的制作效率。
+1. 减少图片的字节数。
+2. 减少了网页的HTTP请求，从而大大提高了页面的性能。
+3. 解决了网页设计师在图片命名上的困扰，只需要对一张集合的图片的命名就可以了 不需要对每一个小元素进行命名，从而提高了网页的制作效率。
 
 ### 字体图标
 
 **优点**
-1.轻量型：加载速度快，减少http请求
-2.灵活性：可以通过css设置大小颜色等
-3.兼容性：网页字体支持所有现代浏览器，包括IE低版本
+1. 轻量型：加载速度快，减少http请求
+2. 灵活性：可以通过css设置大小颜色等
+3. 兼容性：网页字体支持所有现代浏览器，包括IE低版本
 
 [阿里字体图标库](https://www.iconfont.cn/)
 
