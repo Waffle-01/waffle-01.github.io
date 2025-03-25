@@ -1,7 +1,7 @@
 ---
-title: HTML笔记
-date: 2024-09-14
-excerpt: "HTML笔记，会时常更新"
+title: HTML基础
+date: 2024-09-15
+excerpt: "HTML基础内容"
 ---
 
 ### HTML5 基本骨架
@@ -59,25 +59,27 @@ excerpt: "HTML笔记，会时常更新"
 ```html
 <img
   srcset="elva-fairy-480w.jpg 480w, elva-fairy-800w.jpg 800w"
-  sizes="(max-width: 600px) 480px,
-         800px"
+  sizes="(max-width: 600px) 480px,800px"
   src="elva-fairy-800w.jpg"
-  alt="Elva dressed as a fairy" />
+  alt="description" 
+/>
 ```
-
+>`srcset`：提供不同尺寸的图片。
+`sizes`：定义使用哪种大小的图片。(例子中：屏幕宽度不超过600px时，使用480px的图片)
+`src`：如果浏览器不支持 srcset，会默认加载 elva-fairy-800w.jpg
 
 ### 视频
 ```html
-<video src="rabbit320.webm" controls>
+<video src="video.webm" controls>
   <p>
-    你的浏览器不支持 HTML 视频。可点击<a href="rabbit320.mp4">此链接</a>观看。
+    你的浏览器不支持 HTML 视频。可点击<a href="video.mp4">此链接</a>观看。
   </p>
 </video>
 
 <video controls>
-  <source src="rabbit320.mp4" type="video/mp4" />
-  <source src="rabbit320.webm" type="video/webm" />
-  <p>你的浏览器不支持此视频。可点击<a href="rabbit320.mp4">此链接</a>观看</p>
+  <source src="video.mp4" type="video/mp4" />
+  <source src="video.webm" type="video/webm" />
+  <p>你的浏览器不支持此视频。可点击<a href="video.mp4">此链接</a>观看</p>
 </video>
 ```
 
@@ -178,9 +180,13 @@ sandbox 可以当作布尔属性使用，表示打开所有限制。
 菜鸟教程: [http与https的区别](https://www.runoob.com/w3cnote/http-vs-https.html)
 
 
-### 注
-1. HTML 元素的内容中使用多个空白字符或换行，当渲染这些代码的时候，HTML 解释器会将连续出现的空白字符减少为一个单独的空格符
-2. **注译** ``<!-- <p>我在注释内！</p> -->``
+### 注译
+```html
+<!-- 这是一个注释 -->
+```
 
 ### SVG
 SVG 是用于描述矢量图像的语言，它基于 XML
+
+### Tips
+1. HTML 元素的内容中使用多个空白字符或换行，当渲染这些代码的时候，HTML 解释器会将连续出现的空白字符减少为一个单独的空格符
