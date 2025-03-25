@@ -199,12 +199,13 @@ navbar:
       path: / 
       icon: fa-regular fa-house # can be empty
 
-    archives:
-      path: /archives/
-      icon: 
-    # Archives: 
-    #   path: /archives 
-    #   icon: fa-regular fa-archive # can be empty
+    Archives: 
+      path: /archives 
+      icon:  # can be empty
+    
+    Notes:
+      path: /notes
+      icon: fa-solid fa-note
     # Status: 
     #   path: https://status.ohevan.com/
     #   icon: fa-regular fa-chart-bar
