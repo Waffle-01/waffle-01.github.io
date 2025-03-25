@@ -1,19 +1,19 @@
 ---
 title: JavaScript 笔记
 date: 2024-9-25
-excerpt: "javascript基础内容"
+excerpt: "JavaScript基础内容"
 ---
 
 
 ### JavaScript和ECMAScript之间的关系
 
-- ECMAScript 也是一门脚本语言，缩写为ES，通常看做JavaScript的标准化规范。
-- JavaScript是ECMAScript的扩展语言，因为ECMAScript只提供了最基本的语法。
-- JavaScript实现了ECMAScript的语言标准，并且在这个基础之上做了一些扩展，使得我们可以在浏览器环境中操作DOM 和 BOM，在node环境中可以做读写文件之类的操作。
+- ECMAScript 也是一门脚本语言，缩写为 ES，通常看做 JavaScript 的标准化规范。
+- JavaScript 是 ECMAScript 的扩展语言，因为 ECMAScript 只提供了最基本的语法。
+- JavaScript 实现了 ECMAScript 的语言标准，并且在这个基础之上做了一些扩展，使得我们可以在浏览器环境中操作 DOM 和 BOM，在 node 环境中可以做读写文件之类的操作。
 >在浏览器环境中，JavaScript = ECMAScript + BOM + DOM
 在node环境中，JavaScript = ECMAScript + Node APIs
 
-### 引入js
+### 引入 JS
 1. 嵌入HTML
 ```html
 <body>
@@ -45,7 +45,7 @@ console.log();
 
 ### 数据类型
 
-| **类型**      | **包含的数据类型** |
+| <div style="width: 60pt">**类型** </div>     | **包含的数据类型** |
 |--------------|----------------|
 | **基本类型**  | `String`（字符串）、`Number`（数字）、`Boolean`（布尔值）、`Null`（空值）、`Undefined`（未定义）、`Symbol`（符号，ES6 引入） |
 | **引用类型**  | `Object`（对象）、`Array`（数组）、`Function`（函数） |
@@ -397,7 +397,7 @@ const borderLeft = element.clientLeft; // 左边框宽度
 
 **`scrollTop` / `scrollLeft`**
 
-获取元素 滚动的距离，用于可滚动容器的滚动监测。
+获取元素 滚动的距离，用于可滚动容器的滚动监测
 ```javascript
 const scrollTop = element.scrollTop;
 const scrollLeft = element.scrollLeft;
@@ -496,9 +496,9 @@ HTML和js是分离的，但无法同时添加多个事件（前面的会被覆�
 
 ### 事件类型-键盘事件
 
-`keydown` 在键盘上按下某个键时触发。如果按住某个键，会不断触发该事件。但是Opera浏览器不支持这种连续操作。该事件处理函数返回false时，会取消默认的动作(如输入的键盘字符，在IE和Safari浏览器下还会禁止keypress事件响应)
-`keypress` 按下某个键盘键并释放时触发。如果按住某个键，会不断触发该事件。该事件处理函数返回false时，会取消默认的动作(如输入的键盘字符)(`ctrl` `Alt` `Shift` `Meat`等无法触发)
-`keyup` 释放某个键盘键时触发。该事件仅在松开键盘时触发一次，不是一个连续的响应状态
+- `keydown` 在键盘上按下某个键时触发。如果按住某个键，会不断触发该事件。但是Opera浏览器不支持这种连续操作。该事件处理函数返回false时，会取消默认的动作(如输入的键盘字符，在IE和Safari浏览器下还会禁止keypress事件响应)
+- `keypress` 按下某个键盘键并释放时触发。如果按住某个键，会不断触发该事件。该事件处理函数返回false时，会取消默认的动作(如输入的键盘字符)(`ctrl` `Alt` `Shift` `Meat`等无法触发)
+- `keyup` 释放某个键盘键时触发。该事件仅在松开键盘时触发一次，不是一个连续的响应状态
 
 **keycode**
 唯一标识 enter按键-> 13
@@ -517,7 +517,7 @@ HTML和js是分离的，但无法同时添加多个事件（前面的会被覆�
 
 ### 事件类型-表单事件
 
-| 事件 | 详细 |
+| <div style="width: 60pt">事件 | 详细 |
 |----|---| 
 |input事件|input事件当`<input>` `<select>` `<textarea>`的值发生变化时触发。对于复选框`<input type=checkbox>`或单选框`<input type=radio>`，用户改变选项时，也会触发这个事件|
 |select事件|select事件当在`<input>` `<textarea>`里面选中文本时触发|
