@@ -258,13 +258,15 @@ home:
   # Article excerpt length
   excerpt_length: 100 # Max length of article excerpt
   # Article categories visibility
-  categories:
-    enable: false  # Whether to enable
-    limit: 3 # Max number of categories to display
-  # Article tags visibility
-  tags:
-    enable: false  # Whether to enable
-    limit: 3  # Max number of tags to display
+
+  # categories:
+  #   enable: false  # Whether to enable
+  #   limit: 3 # Max number of categories to display
+  # # Article tags visibility
+  # tags:
+  #   enable: false  # Whether to enable
+  #   limit: 3  # Max number of tags to display
+  
 # HOME PAGE ARTICLE SETTINGS <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
 
