@@ -517,7 +517,7 @@ HTML和js是分离的，但无法同时添加多个事件（前面的会被覆�
 
 ### 事件类型-表单事件
 
-| <div style="width: 60pt">事件 | 详细 |
+| <div style="width: 70pt">事件 | 详细 |
 |----|---| 
 |input事件|input事件当`<input>` `<select>` `<textarea>`的值发生变化时触发。对于复选框`<input type=checkbox>`或单选框`<input type=radio>`，用户改变选项时，也会触发这个事件|
 |select事件|select事件当在`<input>` `<textarea>`里面选中文本时触发|
