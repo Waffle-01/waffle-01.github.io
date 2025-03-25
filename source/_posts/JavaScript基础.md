@@ -1,10 +1,8 @@
 ---
 title: JavaScript 笔记
-date: 2024-10-03
-excerpt: "javascript 笔记，会时常更新"
+date: 2024-9-25
+excerpt: "javascript基础内容"
 ---
-
-
 
 
 ### JavaScript和ECMAScript之间的关系
@@ -47,10 +45,11 @@ console.log();
 
 ### 数据类型
 
-**基本类型**
-基本类型：字符串（String）、数字(Number)、布尔(Boolean)、空（Null）、未定义（Undefined）、Symbol
-**引用数据类型**
-引用数据类型（对象类型）：对象(Object)、数组(Array)、函数(Function)，还有两个特殊的对象：正则（RegExp）和日期（Date）
+| **类型**      | **包含的数据类型** |
+|--------------|----------------|
+| **基本类型**  | `String`（字符串）、`Number`（数字）、`Boolean`（布尔值）、`Null`（空值）、`Undefined`（未定义）、`Symbol`（符号，ES6 引入） |
+| **引用类型**  | `Object`（对象）、`Array`（数组）、`Function`（函数） |
+| **特殊对象**  | `RegExp`（正则表达式）、`Date`（日期） |
 
 ### typeof
 typeof 运算符返回类型
@@ -244,13 +243,13 @@ document.write(myFather.firstname + " is " + myFather.age + " years old.");
 ```
 
 ### Math
-`Math.abs(-1)` 返回绝对值
-`Math.max(1,2,3)` 返回最大值
-`Math.min(1,2,3)` 返回最小值
-`Math.ceil(x)` 对 x 进行上舍入
-`Math.floor(x)` 对 x 进行下舍入
-`Math.random()` 返回 0 ~ 1 之间的随机数
-`Math.pow(x,y)` 返回 x 的 y 次幂
+- `Math.abs(-1)` 返回绝对值
+- `Math.max(1,2,3)` 返回最大值
+- `Math.min(1,2,3)` 返回最小值
+- `Math.ceil(x)` 对 x 进行上舍入
+- `Math.floor(x)` 对 x 进行下舍入
+- `Math.random()` 返回 0 ~ 1 之间的随机数
+- `Math.pow(x,y)` 返回 x 的 y 次幂
 
 ### Date
 使用 Date() 方法获得现在的日期
@@ -261,11 +260,11 @@ document.write(myFather.firstname + " is " + myFather.age + " years old.");
 </script>
 ```
 
-`getFullYear()` 使用 getFullYear() 获取年份
-`getTime()` 返回从 1970 年 1 月 1 日至今的毫秒数
-`setFullYear()` 使用 setFullYear() 设置具体的日期
-`toUTCString()` 使用 toUTCString() 将当日的日期（根据 UTC）转换为字符串
-`getDay()` 使用 getDay() 和数组来显示星期，而不仅仅是数字
+- `getFullYear()` 使用 getFullYear() 获取年份
+- `getTime()` 返回从 1970 年 1 月 1 日至今的毫秒数
+- `setFullYear()` 使用 setFullYear() 设置具体的日期
+- `toUTCString()` 使用 toUTCString() 将当日的日期（根据 UTC）转换为字符串
+- `getDay()` 使用 getDay() 和数组来显示星期，而不仅仅是数字
 
 ### Dom 概述
 
@@ -322,12 +321,12 @@ element.innerHTML = "<h1>内容已更新</h1><p>这是一个新内容。</p>";
 
 **获取元素**
 
-`document.getElementsByTagName("div")` 返回带有指定标签名的对象的集合
-`document.getElementsByClassName( )`
-`document.getElementById( );`
-`document.getElementsByName()`
-`document.document.querySelector("#name");` 返回文档中匹配指定 CSS 选择器的一个元素;获取`id`的名使用`#` 获取`class`的名使用`.`
-`document.document.querySelectorALL("#name");` 返回文档中匹配的CSS选择器的所有元素节点列表
+- `document.getElementsByTagName("div")` 返回带有指定标签名的对象的集合
+- `document.getElementsByClassName( )`
+- `document.getElementById( );`
+- `document.getElementsByName()`
+- `document.document.querySelector("#name");` 返回文档中匹配指定 CSS 选择器的一个元素;获取`id`的名使用`#` 获取`class`的名使用`.`
+- `document.document.querySelectorALL("#name");` 返回文档中匹配的CSS选择器的所有元素节点列表
 
 **创建元素**
 
@@ -359,10 +358,10 @@ console.log(id1.id);//id可修改
 
 **classList**
 
-`add()` 增加一个class
-`remove()` 移除一个class
-`contains()` 检查当前元素是否包含class
-`toggle()` 将某个class移入或移出当前元素 
+- `add()` 增加一个class
+- `remove()` 移除一个class
+- `contains()` 检查当前元素是否包含class
+- `toggle()` 将某个class移入或移出当前元素 
 
 **innerHTML**
 可以识别标签
@@ -372,7 +371,37 @@ console.log(id1.id);//id可修改
 
 ### Element 获取元素位置
 
-<img src = "element.png" width=900px  object-fit: contain>
+**`getBoundingClientRect()`**
+
+获取元素 相对于视口（viewport） 的位置，包括 top、left、right、bottom、width 和 height。
+```javascript
+const rect = element.getBoundingClientRect();
+console.log(rect.top, rect.left, rect.width, rect.height);
+```
+
+**`offsetTop` / `offsetLeft`**
+
+获取元素 相对于最近的 offsetParent（最近的 position 不为 static 的祖先元素） 的偏移量。
+```javascript
+const top = element.offsetTop;
+const left = element.offsetLeft;
+```
+
+**`clientTop` / `clientLeft`**
+
+获取元素 边框的宽度，通常用于计算边框尺寸
+```javascript
+const borderTop = element.clientTop; // 上边框宽度
+const borderLeft = element.clientLeft; // 左边框宽度
+```
+
+**`scrollTop` / `scrollLeft`**
+
+获取元素 滚动的距离，用于可滚动容器的滚动监测。
+```javascript
+const scrollTop = element.scrollTop;
+const scrollLeft = element.scrollLeft;
+```
 
 ### CSS操作
 
@@ -453,13 +482,13 @@ HTML和js是分离的，但无法同时添加多个事件（前面的会被覆�
 
 |项目	|Value|
 |-----|-----|
-|click	|单击鼠标左键时发生，如果右键也按下则不会发生。当用户的焦点在按钮上并按了 Enter 键时，同样会触发这个事件|
-|dblclick	|双击鼠标左键时发生，如果右键也按下则不会发生|
-|mousedown	|单击任意一个鼠标按钮时发生|
-|mouseout	|鼠标指针位于某个元素上且将要移出元素的边界时发生|
-|mouseover	|鼠标指针移出某个元素到另一个元素上时发生|
-|mouseup	|松开任意一个鼠标按钮时发生|
-|mousemove	|鼠标在某个元素上时 持续 发生|
+|`click` |单击鼠标左键时发生。当用户的焦点在按钮上并按了 Enter 键时，同样触发|
+|`dblclick`	|双击鼠标左键时发生，如果右键也按下则不会发生|
+|`mousedown` |单击任意一个鼠标按钮时发生|
+|`mouseout`	|鼠标指针位于某个元素上且将要移出元素的边界时发生|
+|`mouseover` |鼠标指针移出某个元素到另一个元素上时发生|
+|`mouseup`	|松开任意一个鼠标按钮时发生|
+|`mousemove` |鼠标在某个元素上时，持续发生|
 
 ### Event 事件对象
 
@@ -717,8 +746,9 @@ console.log(name,age);
 ### 字符串扩展
 
 **unicode表示**
-允许使用"\uxxxx"表示一个字符，xxxx表示字符的unicode码点
-`console.log("\u0061")` a
+允许使用"\uxxxx"表示一个字符，xxxx表示字符的unicode码点。
+`console.log("\u0061")` 
+> a
 
 **字符串遍历**
 ```javascript
@@ -773,7 +803,8 @@ console.log(arr.padStart(5,'o'));  //'ohell'
 
 **扩展运算符**
 
-`console.log(...[1,2,3]);` 1 2 3
+`console.log(...[1,2,3]);`
+>1 2 3
 
 **求数组最大值**
 
