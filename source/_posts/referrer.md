@@ -1,6 +1,6 @@
 ---
 title: HTTP Referer
-date: 2024-09-21
+date: 2024-09-26
 excerpt: "个人学习，整理自：https://www.ruanyifeng.com/blog/2019/06/http-referer.html "
 ---
 
