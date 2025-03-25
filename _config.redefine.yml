@@ -196,12 +196,12 @@ navbar:
   # Navbar links
   links:
     Home: 
-      path: / 
+      path: /
       icon: fa-regular fa-house # can be empty
 
     Archives: 
-      path: /archives 
-      icon: fa-solid fa-file-plus
+      path: /archives
+      icon: fa-solid fa-box-archive
     
     Notes:
       path: /notes
