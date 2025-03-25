@@ -1,7 +1,7 @@
 ---
-title: CSS笔记
-date: 2024-09-14
-excerpt: "CSS笔记，会时常更新"
+title: CSS基础
+date: 2024-09-20
+excerpt: "CSS基础内容"
 ---
 
 ### 内联样式
@@ -15,7 +15,7 @@ excerpt: "CSS笔记，会时常更新"
     <style>
     p{
         font-size: 15px;
-        color: bisque;
+        color: red;
     }
     </style>
 </head>
@@ -102,33 +102,35 @@ excerpt: "CSS笔记，会时常更新"
 
 ### 字体属性
 **颜色**
-`color: #ff0000;` 16进制
-`color: rgb(0, 0, 0);` 分别对应 红 绿 蓝;(255,255,255)白色
-`color: rgba(0, 0, 0, 0);` 最后一个代表透明度，0为完全透明
+- `color: #ff0000;` 16进制
+- `color: rgb(0, 0, 0);` 分别对应 红 绿 蓝;(255,255,255)白色
+- `color: rgba(0, 0, 0, 0);` 最后一个代表透明度，0为完全透明
+
 **字体粗细**
-`font-weight: ;` (100 ~ 900)
+- `font-weight: ;` (100 ~ 900)
+
 **字体样式**
-`font-style: normal;`
-`font-family: 'Microsoft YaHei';`
+- `font-style: normal;`
+- `font-family: 'Microsoft YaHei';`
 
 ### 背景属性
-`background-color: #59ff00;` 背景颜色
-`background-image: url();` 背景图片
-`background-repeat: no-repeat;` 背景图片不平铺(空出部分不继续展示) `repeat-x`水平方向可重复
-`background-size: 1200px 200px;` 图片可能会被拉伸或压缩
-`background-size: cover;` 保证图片比例不变充满容器，图片可能被切割
-`background-size: contain;` 保证图片比例不变尽量充满容器，图片不被切割
-`background-position: left;` 图片开始渲染的位置，可设置像素或百分比 `0% 0%`-最左边最上边
+- `background-color: #59ff00;` 背景颜色
+- `background-image: url();` 背景图片
+- `background-repeat: no-repeat;` 背景图片不平铺(空出部分不继续展示) `repeat-x`水平方向可重复
+- `background-size: 1200px 200px;` 图片可能会被拉伸或压缩
+- `background-size: cover;` 保证图片比例不变充满容器，图片可能被切割
+- `background-size: contain;` 保证图片比例不变尽量充满容器，图片不被切割
+- `background-position: left;` 图片开始渲染的位置，可设置像素或百分比 `0% 0%`-最左边最上边
 
 ### 图片
-`object-fit: cover;` 确保图片会覆盖整个容器，但可能会被裁剪以保持宽高比
-`object-fit: contain;` 图片不会被裁剪，但这可能图片不会完全填满容器。
+- `object-fit: cover;` 确保图片会覆盖整个容器，但可能会被裁剪以保持宽高比
+- `object-fit: contain;` 图片不会被裁剪，但这可能图片不会完全填满容器。
 
 ### 文本属性
-`text-align: center;` 对齐方式
-`text-decoration: underline;` 定义下划线 `overline`上划线 `line-through`删除线
-`text-transform: ;` 定义大小写 `uppercase`全大写 `lowercase`全小写 `capitalize`首字母大写
-`text-indent: 50px;` 首行缩进
+- `text-align: center;` 对齐方式
+- `text-decoration: underline;` 定义下划线 `overline`上划线 `line-through`删除线
+- `text-transform: ;` 定义大小写 `uppercase`全大写 `lowercase`全小写 `capitalize`首字母大写
+- `text-indent: 50px;` 首行缩进
 
 ### 表格属性
 ```css
@@ -211,19 +213,20 @@ excerpt: "CSS笔记，会时常更新"
 ```
 
 ### 盒子模型
-<img src="https://github.com/Waffle-01/waffle-01.github.io/blob/main/source/_posts/images/box.png?raw=true" width=400px  object-fit: contain>
+<img src="https://github.com/Waffle-01/waffle-01.github.io/blob/main/source/_posts/images/CSS_img/box.png?raw=true" width=400px  object-fit: contain>
 
 ### 弹性盒子模型 (css3新特性)
-`display: flex;`
-`flex-direction: row;` 布局方向
-`flex-wrap: wrap;` 环绕效果
-`justify-content: flex-start;` 水平对齐
-`flex-grow: 1;` 项目比例放大(`flex-grow`属性在子属性中) 
+- `display: flex;`
+- `flex-direction: row;` 布局方向
+- `flex-wrap: wrap;` 环绕效果
+- `justify-content: flex-start;` 水平对齐
+- `flex-grow: 1;` 项目比例放大(`flex-grow`属性在子属性中) 
 
 >默认弹性盒子内容横向摆放
 
 ### 浮动
-<img src="https://github.com/Waffle-01/waffle-01.github.io/blob/main/source/_posts/images/float.png?raw=true" width = 600px object-fit: contain/>
+<img src="https://github.com/Waffle-01/waffle-01.github.io/blob/main/source/_posts/images/CSS_img/float.png?raw=true" width = 600px object-fit: contain/>
+
 >只有左右浮动
 
 **浮动的副作用**
@@ -276,7 +279,7 @@ overflow清除浮动 父级容器添加`overflow: hidden;clear: both;`
 
 ### css3新特性
 **圆角**
-<img src="https://github.com/Waffle-01/waffle-01.github.io/blob/main/source/_posts/images/border-radius.png?raw=true" width = 600px object-fit: contain/>
+<img src="https://github.com/Waffle-01/waffle-01.github.io/blob/main/source/_posts/images/CSS_img/border-radius.png?raw=true" width = 600px object-fit: contain/>
 
 该属性是一个 简写属性，将这四个属性 `border-top-left-radius` `border-top-right-radius` `border-bottom-right-radius` `border-bottom-left-radius` 简写为一个属性
 
@@ -425,8 +428,8 @@ box-shadow: unset;
 `display: none` 元素不会被显示在页面上，也不会占据空间
 [`outline`]<https://developer.mozilla.org/zh-CN/docs/Web/CSS/outline>
 
-**注**
->`<style>`标签一般在`<head>`内
-`<p>`标签等在`<body>`内
-chrome浏览器最小字体大小 12px
+### Tips
+1. `<style>`标签一般在`<head>`内
+2. `<p>`标签等在`<body>`内
+3. chrome浏览器最小字体大小 12px
 
