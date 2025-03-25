@@ -1,5 +1,5 @@
 ---
-title: JavaScript 笔记
+title: JavaScript基础
 date: 2024-9-25
 excerpt: "JavaScript基础内容"
 ---
