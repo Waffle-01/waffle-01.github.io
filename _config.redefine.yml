@@ -201,7 +201,7 @@ navbar:
 
     Archives: 
       path: /archives 
-      icon:  # can be empty
+      icon: fa-solid fa-file-plus
     
     Notes:
       path: /notes
