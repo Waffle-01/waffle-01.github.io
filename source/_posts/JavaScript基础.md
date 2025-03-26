@@ -77,7 +77,13 @@ console.log(typeof undeclaredVariable);
 </script>
 ```
 **charAt()**
-
+返回字符串中的第n个字符
+```html
+<script>
+    var str = "HELLO WORLD";
+    var n = str.charAt(2)
+</script>
+```
 **concat()**
 连接两个字符串，返回一个新的字符串，不改变原字符串
 ```html
