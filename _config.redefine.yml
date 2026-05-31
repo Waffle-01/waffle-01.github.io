@@ -12,9 +12,9 @@
 # 修改主题的标题，作者，url
 info:
   # Site title
-  title: waffle
+  title: kitho
   # Author name
-  author: waffle
+  author: kitho
   # Site URL
   url: https://kitho.site
 # BASIC INFORMATION <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
@@ -124,7 +124,7 @@ home_banner:
     light: /images/background-light.png # light mode
     dark: /images/background-light.png # dark mode
   # Home banner title
-  title: waffle's blog
+  title: kitho's blog
   # Home banner subtitle
   subtitle:
     text: ['小舟从此逝，江海寄余生'] # subtitle text, array
@@ -394,7 +394,7 @@ footer:
   # Icon in footer, write fontawesome icon code here
   icon: '<i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 0.5s; color: #f54545"></i>'
   # The start time of the website, format: YYYY/MM/DD HH:mm:ss
-  start: 2024/9/5 00:00:00
+  start: 2026/5/31 00:00:00
   # Site statistics
   statistics: true # show site statistics or not (total articles, total words)
   # Footer message
