@@ -124,10 +124,10 @@ home_banner:
     light: /images/background-light.png # light mode
     dark: /images/background-light.png # dark mode
   # Home banner title
-  title: kitho's blog
+  title: kitho
   # Home banner subtitle
   subtitle:
-    text: ['小舟从此逝，江海寄余生'] # subtitle text, array
+    text: ['Kick off thinking — 启思为钥，以心寻向'] # subtitle text, array
     hitokoto:  # 一言配置
       enable: false # Whether to enable hitokoto
       show_author: false # Whether to show author
